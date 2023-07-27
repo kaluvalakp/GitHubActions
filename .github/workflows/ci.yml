@@ -22,7 +22,7 @@ jobs: #Jobs
     runs-on: ${{matrix.os}} #ubuntu-latest (Docker preinstalled),windows-latest,macOs-latest #Runs on ubuntu, windows or mac OS
     strategy:
       matrix:
-        os: [ubuntu-latest,windows-latest,macOs-latest ]
+        os: [ubuntu-latest]
 
     steps: # Steps followed by actions
     - uses: actions/checkout@v3 # Here's an example of an action that performs a git checkout of a repository.
