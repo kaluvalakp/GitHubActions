@@ -7,7 +7,7 @@
 
 name: Java CI with Gradle
 
-on: #Event is triggered ( series of commands when a  code is pushed or PR is created) testing
+on: #Event is triggered ( series of commands when a  code is pushed or PR is created) testing - testing
   push:
     branches: [ "main" ]
   pull_request:
@@ -16,7 +16,7 @@ on: #Event is triggered ( series of commands when a  code is pushed or PR is cre
 permissions:
   contents: read
 
-jobs: #Jobs
+jobs: #Jobs - Every Job runs in 
   build:
 
     runs-on: ${{matrix.os}} #ubuntu-latest (Docker preinstalled),windows-latest,macOs-latest #Runs on ubuntu, windows or mac OS
